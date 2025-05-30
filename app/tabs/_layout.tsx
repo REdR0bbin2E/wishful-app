@@ -11,7 +11,7 @@ export default function RootLayout() {
                 <View>
                     <TouchableOpacity>
 
-                        <Ionicons name="settings-outline" size={24} color="black" />
+                        <Ionicons name="settings-outline" size={24} color="blue" />
 
                     </TouchableOpacity>
 
