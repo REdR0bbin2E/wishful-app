@@ -1,12 +1,21 @@
-import { Alert, StyleSheet, View, Text, TextInput, TouchableOpacity, Touchable } from 'react-native';
+import { useEffect } from 'react';
+import { View, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-import { Router } from 'expo-router';
-import React, { useEffect, useState } from 'react';
-export default function RootLayout() {
 
+export default function Index() {
   const router = useRouter();
 
-  router.push('tabs/HomeScreen');
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      router.push('/tabs/HomeScreen');
+    }, 0);
 
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <ActivityIndicator size="large" />
+    </View>
+  );
 }

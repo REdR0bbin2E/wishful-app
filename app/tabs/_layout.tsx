@@ -1,13 +1,17 @@
 import { Tabs } from "expo-router";
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, TouchableOpacity, Pressable, Touchable } from 'react-native';
+import { View, Text, TouchableOpacity, Pressable, Touchable, Platform } from 'react-native';
 import { Ionicons } from "@expo/vector-icons";
 
 export default function RootLayout() {
 
+    const statusBarStyle = Platform.OS === 'ios' ? 'auto' : 'auto';
+
     return (
+
+
         <Tabs screenOptions={{
-            headerTitle: "Wishful", headerShown: true, headerRight: () => (
+            headerTitle: "", headerShown: false, headerRight: () => (
                 <View>
                     <TouchableOpacity>
 
@@ -19,7 +23,8 @@ export default function RootLayout() {
                         <Ionicons name="key" size={24} color="black" />
                     </TouchableOpacity>
                 </View>
-            )
+            ),
+
         }}>
 
 
@@ -38,7 +43,7 @@ export default function RootLayout() {
             <Tabs.Screen name="UploadScreen" options={{
                 title: "",
                 tabBarIcon: ({ color, size }) => (
-                    <Ionicons name="add-circle" color={color} size={45} />
+                    <Ionicons name="add-circle" color={color} size={size} />
                 ),
             }} />
             <Tabs.Screen name="MessagesScreen" options={{
