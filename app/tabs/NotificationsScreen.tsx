@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 
 
-export default function MessagesScreen() {
+export default function NotificationsScreen() {
     return (
 
         <View>
