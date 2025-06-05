@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-
+import { Button } from "../../components/ui/button";
 
 export default function HomeScreen() {
     return (
@@ -8,6 +8,8 @@ export default function HomeScreen() {
             <Text>
                 HI
             </Text>
+
+
         </View>
     )
 }
