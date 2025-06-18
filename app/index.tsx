@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
-
+import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 export default function Index() {
+
   const router = useRouter();
 
   useEffect(() => {
@@ -14,8 +15,10 @@ export default function Index() {
   }, []);
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <ActivityIndicator size="large" />
-    </View>
+    <GluestackUIProvider>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" />
+      </View>
+    </GluestackUIProvider>
   );
 }

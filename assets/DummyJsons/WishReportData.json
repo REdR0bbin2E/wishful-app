@@ -1,0 +1,42 @@
+[
+    {
+        "username": "Joe Goldburg",
+        "profilepicture": "Shark PFP",
+        "wishreportimage": "Pic of Picnic"
+    },
+    {
+        "username": "Johnathan Moore",
+        "profilepicture": "Monkey PFP",
+        "wishreportimage": "Pic of Beach"
+    },
+    {
+        "username": "Will Bettlehiem",
+        "profilepicture": "Koala PFP",
+        "wishreportimage": " Pic of Food"
+    },
+    {
+        "username": "Mayowa Akinyede",
+        "profilepicture": "Snake PFP",
+        "wishreportimage": "Pic of Car-Meet"
+    },
+    {
+        "username": "Joseph Sara",
+        "profilepicture": "Crane PFP",
+        "wishreportimage": "Pic of Church service"
+    },
+    {
+        "username": "Armaan Srivastiva",
+        "profilepicture": "Circuit PFP",
+        "wishreportimage": "Pic of skydiving"
+    },
+    {
+        "username": "Natalie Tran",
+        "profilepicture": "Ocean PFP",
+        "wishreportimage": "Pic of boat"
+    },
+    {
+        "username": "Suhas Paruv",
+        "profilepicture": "Sunset PFP",
+        "wishreportimage": "Pic of forest"
+    }
+]
